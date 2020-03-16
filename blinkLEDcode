@@ -1,42 +1,29 @@
-int led2 = D7; // Instead of writing D7 over and over again, we'll write led2
+// Instead of writing D7 over and over again, we'll write led
+int led1 = D7; 
 
-
-
-void setup() {
-
-  pinMode(led2, OUTPUT);
-
+void setup() 
+{
+  pinMode(led1, OUTPUT);
 }
 
+
 int shortblink() 
-
 {
-    
-  digitalWrite(led2, HIGH);
-
+  digitalWrite(led1, HIGH);
   delay(300);
-  
-  digitalWrite(led2, LOW);
-
+  digitalWrite(led1, LOW);
   delay(300);
-
 }
 
 int longblink()
 {
-    
-  digitalWrite(led2, HIGH);
-
+  digitalWrite(led1, HIGH);
   delay(700);
-  
-  digitalWrite(led2, LOW);
-
+  digitalWrite(led1, LOW);
   delay(700);
-  
 }
 
-void loop() 
-
+void loop();
 {
  
  //letter b
